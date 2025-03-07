@@ -11,12 +11,6 @@ packages:
   version: 10.3.0.0.34
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
-- name: SAP
-  version: "1.0"
-  gitServerName: Adapter
-  gitUrl: https://github.com/Sephali-Smrutisikha-IBM-1
-  gitUsername: Sephali-Smrutisikha-IBM-1
-  gitBranch: main
 services:
 - serviceName: project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_5
   packages:
@@ -79,32 +73,54 @@ services:
 configurationVariables:
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdt.connectionManagerSettings.poolable
   : "false"
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ertd.connectionSettings.user
+  : JDBC_BVT
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmIBMPowerAdapter.com_wm_adapter_ibmp_WmIBMPowerAdapter.connections.ibm.connectionSettings.otherProperties
+  : ""
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ert_7March.connectionSettings.driverType
   : Progress® DataDirect®
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ertd.connectionSettings.dbType
+  : ORACLE
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmIBMPowerAdapter.com_wm_adapter_ibmp_WmIBMPowerAdapter.connections.ibm.connectionSettings.password
   : "{AES}XzaFynaZMI4L1ojQOH4uRhU4n40dkx7qspXBLn/Pq+4="
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ertd.connectionManagerSettings.poolable
-  : "false"
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdt.connectionSettings.dbType
-  : ORACLE
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_stgtest.connectionManagerSettings.startupRetryCount
   : "0"
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdt.connectionSettings.dbType
+  : ORACLE
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ertd.connectionManagerSettings.poolable
+  : "false"
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmIBMPowerAdapter.com_wm_adapter_ibmp_WmIBMPowerAdapter.connections.ibm.connectionSettings.proxyEncryptionMode
   : CLIENT_TO_SERVER
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdt.connectionSettings.serverName
+  : adapter-oracle-121-on-amazonrds.cdmjexwbzoym.us-east-1.rds.amazonaws.com
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ert_7March.connectionSettings.transactionType
   : LOCAL_TRANSACTION
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdt.connectionSettings.databaseName
   : ORCL
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ert_7March.connectionSettings.portNumber
+  : "1521"
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionSettings.otherProperties
+  : loginTimeout=60;
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmIBMPowerAdapter.com_wm_adapter_ibmp_WmIBMPowerAdapter.connections.ibm.connectionSettings.isSecureConnection
   : "false"
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmIBMPowerAdapter.com_wm_adapter_ibmp_WmIBMPowerAdapter.connections.ibm.connectionManagerSettings.poolIncrementSize
+  : "1"
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ert_7March.connectionSettings.otherProperties
   : ""
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmIBMPowerAdapter.com_wm_adapter_ibmp_WmIBMPowerAdapter.connections.ibm.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionSettings.password
+  : "{AES}aLZqGGNedYRdf0xY47LtDQ=="
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdt.connectionManagerSettings.blockingTimeout
   : "1000"
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ertd.connectionManagerSettings.expireTimeout
   : "1000"
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdt.connectionSettings.password
+  : "{AES}gOk3wygfWVjWqDc4SLehnQ=="
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdt.connectionManagerSettings.expireTimeout
   : "1000"
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_stgtest.connectionSettings.databaseName
+  : ORCL
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_stgtest.connectionSettings.trustStore
   : ""
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionManagerSettings.startupBackoffSecs
@@ -117,28 +133,58 @@ configurationVariables:
   : "1"
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ertd.connectionManagerSettings.minimumPoolSize
   : "1"
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ertd.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ertd.connectionSettings.datasourceClass
+  : com.wm.dd.jdbcx.oracle.OracleDataSource
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ert_7March.connectionManagerSettings.maximumPoolSize
   : "10"
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ertd.connectionManagerSettings.startupRetryCount
+  : "0"
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_stgtest.connectionManagerSettings.heartBeatInterval
   : "0"
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionSettings.driverType
+  : Progress® DataDirect®
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ert_7March.connectionManagerSettings.heartBeatInterval
   : "0"
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_stgtest.connectionSettings.datasourceClass
   : com.wm.dd.jdbcx.oracle.OracleDataSource
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_stgtest.connectionManagerSettings.blockingTimeout
   : "1000"
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmIBMPowerAdapter.com_wm_adapter_ibmp_WmIBMPowerAdapter.connections.ibm.connectionSettings.proxyEndpoint
+  : ""
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionManagerSettings.minimumPoolSize
   : "1"
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_stgtest.connectionSettings.networkProtocol
+  : ""
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmIBMPowerAdapter.com_wm_adapter_ibmp_WmIBMPowerAdapter.connections.ibm.connectionSettings.systemName
+  : PUB400.COM
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionSettings.user
   : ddd
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionSettings.transactionType
+  : NO_TRANSACTION
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdt.connectionManagerSettings.maximumPoolSize
   : "10"
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ertd.connectionEnabled
+  : "false"
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdt.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdt.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ertd.connectionSettings.portNumber
+  : "1521"
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ert_7March.connectionSettings.databaseName
   : ORCL
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdt.connectionSettings.datasourceClass
+  : com.wm.dd.jdbcx.oracle.OracleDataSource
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ertd.connectionSettings.password
+  : "{AES}gOk3wygfWVjWqDc4SLehnQ=="
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ertd.connectionManagerSettings.maximumPoolSize
   : "10"
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_stgtest.connectionManagerSettings.poolIncrementSize
   : "1"
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionManagerSettings.expireTimeout
+  : "1000"
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdt.connectionSettings.networkProtocol
   : ""
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_stgtest.connectionManagerSettings.maximumPoolSize
@@ -155,110 +201,14 @@ configurationVariables:
   : "1"
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionSettings.dbType
   : ORACLE
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ert_7March.connectionSettings.trustStore
+  : ""
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ertd.connectionSettings.databaseName
   : ORCL
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdt.connectionSettings.otherProperties
   : ""
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ert_7March.connectionManagerSettings.poolable
   : "false"
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_stgtest.connectionManagerSettings.expireTimeout
-  : "1000"
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionManagerSettings.heartBeatInterval
-  : "0"
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmIBMPowerAdapter.com_wm_adapter_ibmp_WmIBMPowerAdapter.connections.ibm.connectionSettings.serviceType
-  : DATAQUEUE
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmIBMPowerAdapter.com_wm_adapter_ibmp_WmIBMPowerAdapter.connections.ibm.connectionSettings.userId
-  : GSAR
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ertd.connectionSettings.serverName
-  : adapter-oracle-121-on-amazonrds.cdmjexwbzoym.us-east-1.rds.amazonaws.com
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionSettings.keyStore
-  : ""
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmIBMPowerAdapter.com_wm_adapter_ibmp_WmIBMPowerAdapter.connections.ibm.connectionEnabled
-  : "false"
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionEnabled
-  : "false"
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_stgtest.connectionSettings.portNumber
-  : "1521"
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmIBMPowerAdapter.com_wm_adapter_ibmp_WmIBMPowerAdapter.connections.ibm.connectionSettings.useDefaultUser
-  : "false"
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdt.connectionEnabled
-  : "true"
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ertd.connectionSettings.networkProtocol
-  : ""
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdt.connectionSettings.trustStore
-  : ""
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_stgtest.connectionManagerSettings.poolable
-  : "false"
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ert_7March.connectionManagerSettings.blockingTimeout
-  : "1000"
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdt.connectionSettings.portNumber
-  : "1521"
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_stgtest.connectionSettings.user
-  : JDBC_BVT
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmIBMPowerAdapter.com_wm_adapter_ibmp_WmIBMPowerAdapter.connections.ibm.connectionSettings.useProxyServer
-  : "false"
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_stgtest.connectionSettings.serverName
-  : adapter-oracle-121-on-amazonrds.cdmjexwbzoym.us-east-1.rds.amazonaws.com
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdt.connectionSettings.transactionType
-  : LOCAL_TRANSACTION
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_stgtest.connectionEnabled
-  : "false"
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmIBMPowerAdapter.com_wm_adapter_ibmp_WmIBMPowerAdapter.connections.ibm.connectionSettings.socketProperties
-  : ""
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ertd.connectionSettings.user
-  : JDBC_BVT
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmIBMPowerAdapter.com_wm_adapter_ibmp_WmIBMPowerAdapter.connections.ibm.connectionSettings.otherProperties
-  : ""
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ertd.connectionSettings.dbType
-  : ORACLE
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdt.connectionSettings.serverName
-  : adapter-oracle-121-on-amazonrds.cdmjexwbzoym.us-east-1.rds.amazonaws.com
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ert_7March.connectionSettings.portNumber
-  : "1521"
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionSettings.otherProperties
-  : loginTimeout=60;
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmIBMPowerAdapter.com_wm_adapter_ibmp_WmIBMPowerAdapter.connections.ibm.connectionManagerSettings.poolIncrementSize
-  : "1"
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmIBMPowerAdapter.com_wm_adapter_ibmp_WmIBMPowerAdapter.connections.ibm.connectionManagerSettings.minimumPoolSize
-  : "1"
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionSettings.password
-  : "{AES}aLZqGGNedYRdf0xY47LtDQ=="
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdt.connectionSettings.password
-  : "{AES}gOk3wygfWVjWqDc4SLehnQ=="
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_stgtest.connectionSettings.databaseName
-  : ORCL
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ertd.connectionManagerSettings.heartBeatInterval
-  : "0"
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ertd.connectionSettings.datasourceClass
-  : com.wm.dd.jdbcx.oracle.OracleDataSource
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ertd.connectionManagerSettings.startupRetryCount
-  : "0"
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionSettings.driverType
-  : Progress® DataDirect®
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmIBMPowerAdapter.com_wm_adapter_ibmp_WmIBMPowerAdapter.connections.ibm.connectionSettings.proxyEndpoint
-  : ""
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_stgtest.connectionSettings.networkProtocol
-  : ""
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmIBMPowerAdapter.com_wm_adapter_ibmp_WmIBMPowerAdapter.connections.ibm.connectionSettings.systemName
-  : PUB400.COM
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionSettings.transactionType
-  : NO_TRANSACTION
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ertd.connectionEnabled
-  : "false"
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdt.connectionManagerSettings.heartBeatInterval
-  : "0"
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdt.connectionManagerSettings.poolIncrementSize
-  : "1"
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ertd.connectionSettings.portNumber
-  : "1521"
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdt.connectionSettings.datasourceClass
-  : com.wm.dd.jdbcx.oracle.OracleDataSource
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ertd.connectionSettings.password
-  : "{AES}gOk3wygfWVjWqDc4SLehnQ=="
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionManagerSettings.expireTimeout
-  : "1000"
-  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ert_7March.connectionSettings.trustStore
-  : ""
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ertd.connectionSettings.driverType
   : Progress® DataDirect®
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ert_7March.connectionManagerSettings.startupBackoffSecs
@@ -271,6 +221,8 @@ configurationVariables:
   : "1000"
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionManagerSettings.maximumPoolSize
   : "10"
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_stgtest.connectionManagerSettings.expireTimeout
+  : "1000"
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdt.connectionSettings.keyStore
   : ""
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ert_7March.connectionManagerSettings.startupRetryCount
@@ -279,33 +231,57 @@ configurationVariables:
   : Progress® DataDirect®
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmIBMPowerAdapter.com_wm_adapter_ibmp_WmIBMPowerAdapter.connections.ibm.connectionManagerSettings.poolable
   : "false"
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmIBMPowerAdapter.com_wm_adapter_ibmp_WmIBMPowerAdapter.connections.ibm.connectionSettings.serviceType
+  : DATAQUEUE
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmIBMPowerAdapter.com_wm_adapter_ibmp_WmIBMPowerAdapter.connections.ibm.connectionSettings.userId
+  : GSAR
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ertd.connectionSettings.serverName
+  : adapter-oracle-121-on-amazonrds.cdmjexwbzoym.us-east-1.rds.amazonaws.com
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionManagerSettings.startupRetryCount
   : "0"
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionSettings.keyStore
+  : ""
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmIBMPowerAdapter.com_wm_adapter_ibmp_WmIBMPowerAdapter.connections.ibm.connectionManagerSettings.startupBackoffSecs
   : "10"
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdt.connectionManagerSettings.startupBackoffSecs
   : "10"
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmIBMPowerAdapter.com_wm_adapter_ibmp_WmIBMPowerAdapter.connections.ibm.connectionEnabled
+  : "false"
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ertd.connectionSettings.transactionType
   : LOCAL_TRANSACTION
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdt.connectionSettings.user
   : JDBC_BVT
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionEnabled
+  : "false"
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_stgtest.connectionSettings.otherProperties
   : ""
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdt.connectionManagerSettings.minimumPoolSize
   : "1"
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_stgtest.connectionSettings.password
   : "{AES}gOk3wygfWVjWqDc4SLehnQ=="
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_stgtest.connectionSettings.portNumber
+  : "1521"
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionManagerSettings.poolIncrementSize
   : "1"
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ertd.connectionSettings.keyStore
   : ""
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ert_7March.connectionSettings.keyStore
   : ""
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmIBMPowerAdapter.com_wm_adapter_ibmp_WmIBMPowerAdapter.connections.ibm.connectionSettings.useDefaultUser
+  : "false"
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdt.connectionEnabled
+  : "true"
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ert_7March.connectionSettings.networkProtocol
+  : ""
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ertd.connectionSettings.networkProtocol
   : ""
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionSettings.networkProtocol
   : ""
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionSettings.trustStore
+  : ""
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdt.connectionSettings.trustStore
   : ""
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionSettings.portNumber
   : "1521"
@@ -315,8 +291,14 @@ configurationVariables:
   : ""
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ertd.connectionManagerSettings.startupBackoffSecs
   : "10"
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_stgtest.connectionManagerSettings.poolable
+  : "false"
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_stgtest.connectionSettings.transactionType
   : LOCAL_TRANSACTION
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ert_7March.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdt.connectionSettings.portNumber
+  : "1521"
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ert_7March.connectionSettings.datasourceClass
   : com.wm.dd.jdbcx.oracle.OracleDataSource
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ert_7March.connectionSettings.password
@@ -329,6 +311,12 @@ configurationVariables:
   : "1"
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmIBMPowerAdapter.com_wm_adapter_ibmp_WmIBMPowerAdapter.connections.ibm.connectionManagerSettings.maximumPoolSize
   : "10"
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_stgtest.connectionSettings.user
+  : JDBC_BVT
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmIBMPowerAdapter.com_wm_adapter_ibmp_WmIBMPowerAdapter.connections.ibm.connectionSettings.useProxyServer
+  : "false"
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_stgtest.connectionSettings.serverName
+  : adapter-oracle-121-on-amazonrds.cdmjexwbzoym.us-east-1.rds.amazonaws.com
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmIBMPowerAdapter.com_wm_adapter_ibmp_WmIBMPowerAdapter.connections.ibm.connectionSettings.currentLibrary
   : GSAR231
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdt.connectionManagerSettings.startupRetryCount
@@ -337,6 +325,10 @@ configurationVariables:
   : "10"
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionManagerSettings.blockingTimeout
   : "1000"
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdt.connectionSettings.transactionType
+  : LOCAL_TRANSACTION
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_stgtest.connectionEnabled
+  : "false"
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ertd.connectionSettings.otherProperties
   : ""
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ert_7March.connectionSettings.user
@@ -345,6 +337,8 @@ configurationVariables:
   : "0"
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_stgtest.connectionSettings.dbType
   : ORACLE
+  ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmIBMPowerAdapter.com_wm_adapter_ibmp_WmIBMPowerAdapter.connections.ibm.connectionSettings.socketProperties
+  : ""
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_ert_7March.connectionManagerSettings.expireTimeout
   : "1000"
   ? artConnection.Adapters_stgMarch7Project.project.adapters_stgmarch7.WmIBMPowerAdapter.com_wm_adapter_ibmp_WmIBMPowerAdapter.connections.ibm.connectionManagerSettings.blockingTimeout
